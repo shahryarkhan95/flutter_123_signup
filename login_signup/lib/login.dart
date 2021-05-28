@@ -223,8 +223,29 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: ImageIcon(AssetImage('assets/apple.png')),
                       ),
 
+                          Container(
+                height: 40.0,
+                color: Colors.transparent,
+                child: Container(
+                  decoration: BoxDecoration(
+                      border: Border.all(
+                        width: 1.0,
+                      ),
+                      color: Colors.transparent,
+                      borderRadius: BorderRadius.circular(20.0)),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Center(
+                        //FACEBOOK LOGO IMAGE
+                        child: ImageIcon(AssetImage('assets/google.jpg')),
+                      ),
+
+
             ],
           ),
-        ));
+          
+        )
+                  );
   }
 }
